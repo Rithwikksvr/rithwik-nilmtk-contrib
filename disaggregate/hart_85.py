@@ -263,7 +263,7 @@ class Hart85(Disaggregator):
         self.state_threshold = state_threshold
         self.noise_level = noise_level
         [self.steady_states, self.transients] = find_steady_states_transients(
-            train_main,  noise_level, state_threshold)
+            train_main, columns, noise_level, state_threshold)
         self.pair_df = self.pair(
             buffer_size, min_tolerance, percent_tolerance, large_transition)
         self.centroids = hart85_means_shift_cluster(self.pair_df, columns)
