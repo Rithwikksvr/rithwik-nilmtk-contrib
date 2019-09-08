@@ -358,17 +358,17 @@ class API():
             print ("No samples found in ground truth")
             return None
 
-        for i in gt_overall.columns:
-            plt.figure()
+        # for i in gt_overall.columns:
+        #     plt.figure()
             
-            plt.plot(self.test_mains[0],label='Mains reading')
-            plt.plot(gt_overall[i],label='Truth')
-            for clf in pred_overall:
+        #     plt.plot(self.test_mains[0],label='Mains reading')
+        #     plt.plot(gt_overall[i],label='Truth')
+        #     for clf in pred_overall:
                 
-                plt.plot(pred_overall[clf][i],label=clf)
-            plt.title(i)
-            plt.legend()
-            plt.show()
+        #         plt.plot(pred_overall[clf][i],label=clf)
+        #     plt.title(i)
+        #     plt.legend()
+        #     plt.show()
 
 
 

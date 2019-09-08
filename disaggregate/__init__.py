@@ -5,8 +5,8 @@ from .combinatorial_optimisation import CO
 from .dae import DAE
 from .hart_85 import Hart85
 from .dsc import DSC
-from .afhmm import AFHMM
-from .afhmm_sac import AFHMM_SAC
+#from .afhmm import AFHMM
+#from .afhmm_sac import AFHMM_SAC
 from .seq2point import Seq2Point
 from .seq2seq import Seq2Seq
 from .WindowGRU import WindowGRU

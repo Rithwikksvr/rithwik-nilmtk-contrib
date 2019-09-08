@@ -1,0 +1,91 @@
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+09/07/2019 07:34:37 AM INFO: Reading notebook /home/nilmtk/nilmtk-contrib/Exp_4_4.ipynb
+09/07/2019 07:34:38 AM INFO: Running cell:
+from api import API
+
+09/07/2019 07:34:40 AM INFO: Cell returned
+09/07/2019 07:34:40 AM INFO: Running cell:
+redd = {
+  'power': {
+    'mains': ['apparent','active'],
+    'appliance': ['apparent','active']
+  },
+  'sample_rate': 60,
+  'appliances': ['washing machine','fridge'],
+  'methods': {
+    'Mean': {}
+       'Seq2Point':{'n_epochs':2}
+#      "Seq2Seq":{'n_epochs':2},'RNN':{'n_epochs':2},"WindowGRU":{'n_epochs':2},
+#       'DAE':{'n_epochs':2}
+  },
+    
+  'train': {
+    'datasets': {
+      'UKDALE': {
+        'path': '/home/nilmtk/nilmtk-contrib/ukdale.h5',
+        'buildings': {
+              1: {
+                'start_time': '2017-01-05',
+                'end_time': '2017-03-05'#
+              },
+          
+        }
+      },
+        
+    }
+  },
+    
+  'test': {
+    'datasets': {
+      'DRED': {
+        'path': '/home/nilmtk/nilmtk-contrib/DRED.h5',
+        'buildings': {
+              1: {
+                    'start_time': '2015-09-21',
+                    'end_time': '2015-10-01'
+          }
+        }
+      },
+      'REDD': {
+        'path': '/home/nilmtk/redd.h5',
+        'buildings': {
+              1: {
+                    'start_time': '2011-04-17',
+                    'end_time': '2011-04-27'
+          }
+        }
+      }
+    },
+    'metrics': ['mae', 'rmse']
+  }
+}
+
+
+
+09/07/2019 07:34:40 AM INFO: Cell raised uncaught exception: 
+[0;36m  File [0;32m"<ipython-input-2-c9294146b9d8>"[0;36m, line [0;32m10[0m
+[0;31m    'Seq2Point':{'n_epochs':2}[0m
+[0m              ^[0m
+[0;31mSyntaxError[0m[0;31m:[0m invalid syntax
+
+09/07/2019 07:34:40 AM INFO: Saving to /home/nilmtk/nilmtk-contrib/Exp_4_4.ipynb
+09/07/2019 07:34:40 AM INFO: Shutdown kernel
+09/07/2019 07:34:40 AM WARNING: Exiting with nonzero exit status

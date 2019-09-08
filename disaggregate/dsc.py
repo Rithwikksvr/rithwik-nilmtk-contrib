@@ -27,7 +27,7 @@ class DSC(Disaggregator):
         self.dictionaries = OrderedDict()
         self.power = OrderedDict()
         self.shape = 60*2
-        self.learning_rate = 1e-9
+        self.learning_rate = 1e-10
         self.iterations = 3000
         self.sparsity_coef = 20
         self.n_components = 10
